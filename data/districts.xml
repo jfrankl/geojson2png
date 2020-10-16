@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="transparent">
+
+    <Style name="style">
+        <Rule>
+            <LineSymbolizer stroke="black" stroke-width="6" />
+            <PolygonSymbolizer fill="#ffffff" />
+        </Rule>
+        <Rule>
+            <Filter>[id] = 0</Filter>
+            <PolygonSymbolizer fill="#FFFFFF" />
+        </Rule>
+        <Rule>
+            <Filter>[id] = 1</Filter>
+            <PolygonSymbolizer fill="#19CB35" />
+        </Rule>
+        <Rule>
+            <Filter>[id] = 2</Filter>
+            <PolygonSymbolizer fill="#F4B53F" />
+        </Rule>
+        <Rule>
+            <Filter>[id] = 3</Filter>
+            <PolygonSymbolizer fill="#8053F6" />
+        </Rule>
+        <Rule>
+            <Filter>[id] = 4</Filter>
+            <PolygonSymbolizer fill="#A9573D" />
+        </Rule>
+        <Rule>
+            <Filter>[id] = 5</Filter>
+            <PolygonSymbolizer fill="#0AC4FF" />
+        </Rule>
+        <Rule>
+            <Filter>[id] = 6</Filter>
+            <PolygonSymbolizer fill="#FE6F2A" />
+        </Rule>
+        <Rule>
+            <Filter>[id] = 7</Filter>
+            <PolygonSymbolizer fill="#2E7EF9" />
+        </Rule>
+        <Rule>
+            <Filter>[id] = 8</Filter>
+            <PolygonSymbolizer fill="#F72B61" />
+        </Rule>
+        <Rule>
+            <Filter>[id] = 9</Filter>
+            <PolygonSymbolizer fill="#EDAAC5" />
+        </Rule>
+        <Rule>
+            <Filter>[id] = 10</Filter>
+            <PolygonSymbolizer fill="#5DBBAE" />
+        </Rule>
+        <Rule>
+            <Filter>[id] = 11</Filter>
+            <PolygonSymbolizer fill="#AA93A1" />
+        </Rule>
+        <Rule>
+            <Filter>[id] = 12</Filter>
+            <PolygonSymbolizer fill="#858C73" />
+        </Rule>
+        <Rule>
+            <Filter>[id] = 13</Filter>
+            <PolygonSymbolizer fill="#FF937B" />
+        </Rule>
+        <Rule>
+            <Filter>[id] = 14</Filter>
+            <PolygonSymbolizer fill="#A00090" />
+        </Rule>
+        <Rule>
+            <Filter>[id] = 15</Filter>
+            <PolygonSymbolizer fill="#FFDC5B" />
+        </Rule>
+        <Rule>
+            <Filter>[id] = 16</Filter>
+            <PolygonSymbolizer fill="#6B6783" />
+        </Rule>
+        <Rule>
+            <Filter>[id] = 17</Filter>
+            <PolygonSymbolizer fill="#016071" />
+        </Rule>
+        <Rule>
+            <Filter>[id] = 18</Filter>
+            <PolygonSymbolizer fill="#FF06BF" />
+        </Rule>
+    </Style>
+
+    <Layer name="world" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+        <StyleName>style</StyleName>
+        <Datasource>
+            <Parameter name="file">districts.geojson</Parameter>
+            <Parameter name="type">geojson</Parameter>
+        </Datasource>
+    </Layer>
+
+</Map>
